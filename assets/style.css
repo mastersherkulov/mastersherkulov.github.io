@@ -1,0 +1,170 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    font-family: poppins, sans-serif !important
+}
+
+:root {
+    --link-color-1: #333333;
+    --link-hover-color-1: #111111;
+    --cursor-cricle-color: #ffffff;
+    --cursor-color: #ccc;
+    --cursor-hover-color: #004aff;
+    --header-color-1: #004aff;
+    --text-color-0: #004aff;
+    --text-color-1: #222222;
+    --text-color-2: #777777;
+    --text-color-3: #1b59f713;
+    --back-color-1: #eff2ffec;
+    --back-color-2: #1b59f713;
+    --header-shadow-color: #5a5a5a;
+    --change-theme-color: #333333;
+    --change-theme-hover-color: #000000;
+    --change-theme-back-color: #000000d9;
+    --change-theme-back-hover-color: #00000033;
+    --backwords-color: #0000002e;
+    --header-color: #222222;
+    --header-hover-color: #000000;
+    --header-back-color: #f4f7ff;
+    --header-menu-back-color: #00000050;
+    --header-menu-ul-back-color: #eff2fffb;
+    --header-menu-ul-shadow-color: #00000025;
+    --header-name-logo-back-color: #333;
+    --header-name-logo-color: #fff;
+    --header-border-color: #00000024;
+    --header-back-active-color: #0044ff10;
+    --header-border-active-color: #004aff;
+    --header-box-shadow-hover-color: #0044ffcb;
+    --education-color: #333;
+    --employment-color: #333;
+    --employment-position-color: #555;
+    --blog-content-color: #00000033;
+    --blog-back-color: #fff;
+    --blog-boxshadow-color: #0000001a;
+    --blog-hover-boxshadow-color: #00000031;
+    --blogview-back-color: #ffffffab;
+    --blogview-boxshadow-color: #0000000c;
+    --project-open-color: #fff;
+    --project-boxshadow-color: #0044ff10;
+    --project-hover-boxshadow-color: #0044ff17;
+    --project-border-color: #0044ffcb;
+    --project-content-color: #f1f4fff5;
+    --project-open-back-color: #769dfffd;
+    --project-open-back-hover-color: #0044ffcb;
+    --socials-color: #333333;
+    --socials-hover-color: #fff;
+    --socials-back-color: #0044ff13;
+    --socials-back-hover-color: #2755c9;
+    --contact-button-color: #fff;
+    --contact-button-back-color: #004aff;
+    --contact-button-hover-color: #0044ffcb;
+    --contact-input-color: #030303d5;
+    --contact-input-back-color: #00000003;
+    --contact-input-border-color: #e0e0e0;
+    --contact-input-border-hover-color: #004aff;
+    --contact-text-back-color: #e2e7f5;
+    --skill-back-color: #0044ff07;
+    --skill-border-color: #0044ff86;
+    --success-back-color: #0044ff07;
+    --success-border-color: #0044ff86;
+    --success-full-text-back-color: #ffffffd7;
+    --subtitle-a: #1a73e8;
+    --subtitle-a-hover: #1150a3;
+    --selection-color: #fff;
+    --selection-background: #004aff
+}
+
+html[data-theme=dark], .dark-mode {
+    --link-color-1: #03f2ef;
+    --link-hover-color-1: #a0fffe;
+    --cursor-cricle-color: #03f2ef;
+    --cursor-color: #a0fffe;
+    --cursor-hover-color: #ffe600;
+    --header-color-1: #03f2ef;
+    --text-color-0: #03f2ef;
+    --text-color-1: #dddddd;
+    --text-color-2: #9bcfcf;
+    --text-color-3: #0044ff17;
+    --back-color-1: #000e0d;
+    --back-color-2: #ffffff1a;
+    --header-border-color: #f6f6f6;
+    --change-theme-color: #cccccc;
+    --change-theme-hover-color: #ffffff;
+    --change-theme-back-color: #000000d9;
+    --change-theme-back-hover-color: #dddddd2c;
+    --backwords-color: #00ffee0c;
+    --header-color: #cccccc;
+    --header-hover-color: #03f2ef;
+    --header-back-color: #001615d1;
+    --header-menu-back-color: #000e0ddd;
+    --header-menu-ul-back-color: #002220eb;
+    --header-menu-ul-shadow-color: #000e0d;
+    --header-name-logo-back-color: #ffffff19;
+    --header-name-logo-color: #dddddd;
+    --header-border-color: #001c1a57;
+    --header-back-active-color: #ffffff0f;
+    --header-border-active-color: #03f2ef;
+    --header-box-shadow-hover-color: #00000042;
+    --education-color: #ddd;
+    --employment-color: #ddd;
+    --employment-position-color: #ccc;
+    --blog-content-color: #00000066;
+    --blog-back-color: rgba(185, 185, 185, 0.25);
+    --blog-boxshadow-color: #ffffff0b;
+    --blog-hover-boxshadow-color: #ffffff15;
+    --blogview-back-color: #000e0d;
+    --blogview-boxshadow-color: #ffffff07;
+    --project-boxshadow-color: #a0fffd2d;
+    --project-hover-boxshadow-color: #a0fffe;
+    --project-content-color: #000000cc;
+    --project-border-color: #1f5756;
+    --project-open-back-color: #1f5756;
+    --project-open-back-hover-color: #062b2a;
+    --socials-color: #dfdfdf;
+    --socials-hover-color: #2c2c2c;
+    --socials-back-color: #ffffff0e;
+    --socials-back-hover-color: #03f2ef;
+    --contact-input-color: #ffffffd5;
+    --contact-button-color: #111;
+    --contact-button-back-color: #24dbd8;
+    --contact-button-hover-color: #00fffb;
+    --contact-input-back-color: #a0fffd17;
+    --contact-input-border-color: #03f2ee31;
+    --contact-input-border-hover-color: #00fffb;
+    --contact-text-back-color: #0cc0bd33;
+    --skill-back-color: #3f3f3f2d;
+    --skill-border-color: #a0fffd2d;
+    --success-back-color: #3f3f3f2d;
+    --success-border-color: #a0fffd2d;
+    --success-full-text-back-color: #000000b7;
+    --subtitle-a: #006eff;
+    --subtitle-a-hover: #5fa4ff;
+    --selection-color: #111;
+    --selection-background: #24dbd8
+}
+
+html ::selection {
+    color: var(--selection-color);
+    background: var(--selection-background)
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    will-change: auto
+}
+body {
+    background-color: var(--back-color-1);
+    color: var(--text-color-1);
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
